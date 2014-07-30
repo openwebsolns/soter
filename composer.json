@@ -1,0 +1,26 @@
+{
+    "name": "openwebsolns/soter",
+    "type": "library",
+    "description": "PHP Input Validation Library",
+    "keywords": ["validation","input","filter"],
+    "homepage": "http://github.com/openwebsolns/soter",
+    "license": "GPLv3",
+    "authors": [
+        {
+            "name": "Dayan Paez",
+            "email": "dayan@openweb-solutions.net",
+            "homepage": "http://www.openweb-solutions.net"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "suggest": {
+        "openwebsolns/myorm": "Allows validation of MyORM\\DBObject"
+    },
+    "autoload": {
+        "psr-4": {
+            "Soter\\": "src/"
+        }
+    }
+}
