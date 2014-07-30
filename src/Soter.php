@@ -116,7 +116,7 @@ class Soter {
    * @throws InvalidArgumentException if no such class exists
    */
   final public function setDBI($dbi) {
-    if (!class_exists('MyORM\\DBI') || !($dbi instanceof MyORM\DBI))
+    if (!class_exists('\\MyORM\\DBI') || !($dbi instanceof \MyORM\DBI))
       throw new \InvalidArgumentException("DBI class does not exist: requires MyORM\DBI");
     $this->dbm = $dbi;
   }

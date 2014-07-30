@@ -7,7 +7,7 @@ namespace Soter;
  * @version 2011-05-17
  * @package validation
  */
-class SoterException extends Exception {
+class SoterException extends \Exception {
   /**
    * @const all that could possibly go wrong
    */
