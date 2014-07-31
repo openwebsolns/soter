@@ -592,9 +592,9 @@ class Soter {
     }
   }
 
-  final public function incID(Array $args, $key, DBObject $obj, DBObject $default = null) {
+  final public function incDBObject(Array $args, $key, $obj, $default = null) {
     try {
-      return $this->reqID($args, $key, $obj);
+      return $this->reqDBObject($args, $key, $obj);
     }
     catch (SoterException $e) {
       return $default;
@@ -753,9 +753,9 @@ class Soter {
     }
   }
 
-  final public function hasID(&$value, Array $args, $key, DBObject $obj) {
+  final public function hasDBObject(&$value, Array $args, $key, $obj) {
     try {
-      $value = $this->reqID($args, $key, $obj);
+      $value = $this->reqDBObject($args, $key, $obj);
       return true;
     }
     catch (SoterException $e) {
